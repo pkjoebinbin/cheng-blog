@@ -7,8 +7,21 @@
   
 
 
+  
+**不啰嗦，先看图**
+
+
+![PC端博客首页][3]
+
+
+  
+  ![移动端首页][4]
+  
+  
+  
+
+
   [1]: http://kc9m.com
   [2]: http://kc9m.com/admin/admin.html
-  
-  
-  阿萨德发
+  [3]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/pcIndex.png
+  [4]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/mobileIndex.png
