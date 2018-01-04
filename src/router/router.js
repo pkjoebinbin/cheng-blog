@@ -7,6 +7,7 @@ import CommentList from '@/components/CommentList'
 import PictureAdmin from '@/components/PictureAdmin'
 import UserAdmin from '@/components/UserAdmin'
 import Detail from '@/components/Detail'
+import DataBoard from '@/components/DataBoard'
 
 
 Vue.use(Router)
@@ -56,6 +57,12 @@ export default new Router({
                 name:'Detail',
                 component:Detail
             },
+
+            {
+                path:'/DashBoard/DataBoard',
+                name:'DataBoard',
+                component:DataBoard
+            }
 
 
     	]

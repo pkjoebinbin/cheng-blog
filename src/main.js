@@ -6,10 +6,9 @@ import Router from './router/router.js'
 import resource from 'vue-resource'
 import './css/style.css'
 import $ from 'jquery'
-import {Pagination,
-  
+import {
+  Pagination,
   Autocomplete,
- 
   Menu,
   Submenu,
   MenuItem,
@@ -38,14 +37,7 @@ import {Pagination,
   Col,
   Upload,
   Badge,
-  
-  
-  
- 
-  
-  
-
-  
+  Tooltip,
   Container,
   Header,
   Aside,
@@ -73,7 +65,7 @@ Vue.config.productionTip = false
 Vue.use(Pagination)
 
 Vue.use(Autocomplete)
-
+Vue.use(Tooltip)
 Vue.use(Menu)
 Vue.use(Submenu)
 Vue.use(MenuItem)

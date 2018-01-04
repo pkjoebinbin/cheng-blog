@@ -147,7 +147,19 @@
 
 		watch:{
 			'$route':'getDetail'
-		}
+		},
+
+		//组件离开路由钩子函数
+		beforeRouteLeave(to,from,next){
+			this.$store.dispatch('testBeforeRouteLeave',{from:from,next:next})
+		},
+
+		beforeRouteUpdate(to,from,next){
+			this.$store.dispatch('testBeforeRouteLeave',{from:from,next:next})
+		},
+
+
+		
 
 		
 

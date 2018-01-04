@@ -2,8 +2,8 @@
 	<article id="Login">
 		<div id="LoginPart">
 			<img src="../assets/dogLogo.svg" alt="" id="logo">
-			<el-input class="input"  placeholder="用户名"></el-input>
-			<el-input class="input"  placeholder="密码" type="password"></el-input>
+			<el-input class="input" v-model="user" placeholder="用户名"></el-input>
+			<el-input class="input" v-model="password" placeholder="密码" type="password"></el-input>
 
 			<div id="ButtonPart">
 				<el-button class="button" type="primary" v-on:click="login">登录</el-button>
@@ -11,11 +11,7 @@
 			</div>
 		</div>
 
-		<!-- <button v-on:click="increment">增加</button>
-		<button v-on:click="decrement">减少</button>
-		<button v-on:click="clickOdd">偶数才能点击</button>
-		<button v-on:click="test('bbbb')">异步请求</button>
-		<div style="color:#fff">{{count}},他现在是{{getOdd}}</div> -->
+		
 	</article>
 </template>
 
@@ -29,13 +25,13 @@ export default{
 
 
 
-	/*data(){
+	data(){
 		return{
 			user:'',
 			password:'',
 			
 		}
-	},*/
+	},
 
 
 
@@ -46,7 +42,10 @@ export default{
 		},
 
 		login(){
-			this.$router.push({ name:'DashBoard'});
+
+			this.$store.dispatch('login',{user:this.user,password:this.password,router:this.$router})
+
+			
 		},
 
 

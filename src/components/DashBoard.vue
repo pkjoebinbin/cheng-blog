@@ -13,7 +13,7 @@
 		    active-text-color="#ffd04b"
 		    router>
       			
-      			<el-menu-item index="1">		        
+      			<el-menu-item index="/DashBoard/DataBoard">		        
 			         <i class="el-icon-star-off"></i>
 			         <span>大数据</span>
       			</el-menu-item>
@@ -64,8 +64,8 @@
 			
     		<el-header id="Header" height="auto">
 	    		<div class="search">
-		    		<el-input size="medium"   placeholder="请输入内容">
-		    			<el-button slot="append" icon="el-icon-search" type="primary"></el-button>
+		    		<el-input size="medium" @input="searchChange" placeholder="请输入内容" :value="$store.getters.search">
+		    			<el-button slot="append" icon="el-icon-search" @click="search" type="primary"></el-button>
 		    		</el-input>
 		    	</div>
     		</el-header>
@@ -87,6 +87,49 @@
 <script>
 	export default{
 		
+		data(){
+			return{
+				
+				
+
+			}
+		},
+
+		methods:{
+			search(){
+				this.$store.dispatch('search',this.$router);
+			},
+
+			searchChange(e){
+				this.$store.commit('searchChange',e)
+			}
+		},
+
+
+
+		 beforeRouteEnter(to,from,next){
+		 	var user = sessionStorage.getItem("kongUserName");
+		 	
+		 	if(user){
+		 		next()
+		 	}else{
+		 		next('/login');
+		 	}
+
+		 	
+		 }
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 
 </script>
