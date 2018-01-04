@@ -10,18 +10,16 @@
   
 **不啰嗦，先看图**
 
-
-![PC端博客首页][3]
-
-
-  
-  ![移动端首页][4]
-  
-  
-  
-
-
   [1]: http://kc9m.com
   [2]: http://kc9m.com/admin/admin.html
-  [3]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/pcIndex.png
-  [4]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/mobileIndex.png
+  [3]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/adminLogin.jpg
+  
+  [4]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/dashBoard.jpg
+  
+  [5]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/blogList.jpg
+  
+  [6]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/detail.jpg
+  
+  [7]: https://github.com/pkjoebinbin/cheng-blog/blob/master/imgs/pcIndex.png
+  
+  阿萨德发
